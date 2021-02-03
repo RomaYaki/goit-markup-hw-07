@@ -1,0 +1,196 @@
+footer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  background-color: $dark-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-container {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  align-items: baseline;
+  justify-content: space-between;
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer-addres {
+  display: inline-block;
+}
+
+.footer-social {
+  display: inline-block;
+  /* margin-left: 70px; */
+}
+
+.follow-text {
+  margin: 0;
+  font-family: $sec-font-family;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.foot-txt {
+  padding-bottom: 20px;
+}
+
+.social-block-footer {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-link-footer {
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  color: $main-background-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  @include transit(background-color);
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+  color: $main-background-color;
+  background-color: $accent-color;
+}
+
+.social-block-footer > .social-li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-logo {
+  padding-bottom: 20px;
+}
+
+.footer-ul {
+  padding-left: 0px;
+}
+
+.logo-foot {
+  color: $accent-color;
+  font-family: $main-font-family;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.logo-white {
+  color: $text-hero;
+  font-family: $main-font-family;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.addres {
+  color: $text-hero;
+  font-family: $sec-font-family;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.mail {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: $sec-font-family;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.number {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: $sec-font-family;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+/* Follow modal footer*/
+
+.send-container {
+  display: inline-block;
+}
+
+.send-container .follow-text {
+  margin-bottom: 20px;
+}
+
+.footer-form {
+  display: flex;
+  align-items: center;
+}
+
+.footer-follow {
+  color: #ffffff;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: rgba(33, 150, 243, 0);
+  padding-left: 16px;
+}
+
+.follow-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+
+  border-style: none;
+  outline: none;
+
+  font-family: $sec-font-family;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+
+  color: $text-hero;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 26px;
+}
+
+.sand-icon {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: $text-hero;
+}

@@ -1,0 +1,106 @@
+.social-block > .social-li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-block {
+  padding-left: 32px;
+  padding-bottom: 30px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-link {
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  color: $social-icons;
+  background-color: $main-background-color;
+
+  @include transit(color);
+  @include transit(background-color);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: $main-background-color;
+  background-color: $accent-color;
+}
+
+.team-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $sec-background-color;
+}
+
+.team-container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-text {
+  margin: 0;
+}
+
+.team {
+  padding: 0px;
+  margin: 0px;
+  font-family: $sec-font-family;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.team-ul {
+  justify-content: center;
+  padding-top: 50px;
+  display: flex;
+  padding-left: 0px;
+}
+
+.team-li {
+  background-color: $main-background-color;
+  margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-li:last-child {
+  margin-right: 0px;
+}
+
+.name {
+  font-family: $sec-font-family;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.profession {
+  font-family: $sec-font-family;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}

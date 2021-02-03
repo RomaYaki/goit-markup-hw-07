@@ -1,0 +1,44 @@
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.clients-ul > .clients-li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: $accent-color;
+  border-color: $accent-color;
+}
+
+.clients-ul {
+  justify-content: center;
+  padding-top: 50px;
+  display: flex;
+  padding-left: 0px;
+}
+
+.clients-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: $social-icons;
+
+  @include transit(color);
+}
+
+.clients-icon {
+  fill: currentColor;
+}
