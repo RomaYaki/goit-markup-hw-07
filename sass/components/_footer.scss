@@ -64,8 +64,8 @@ footer {
   @include transit(background-color);
 }
 
-.social-link-footer:hover,
-.social-link-footer:focus {
+&:hover,
+&:focus {
   color: $main-background-color;
   background-color: $accent-color;
 }

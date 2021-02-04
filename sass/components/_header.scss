@@ -68,11 +68,10 @@ header {
   @include transit(color);
 }
 
-.nav-link::after {
+&::after {
   content: "";
 
   position: absolute;
-  margin: -1p;
   bottom: 0;
   left: 0;
   display: block;
@@ -85,18 +84,18 @@ header {
   @include transit(opacity);
 }
 
-.current-link.nav-link::after,
-.nav-link:hover::after {
+&::after,
+&:hover::after {
   opacity: 1;
 }
 
-.nav-link:hover::after,
-.nav-link:focus::after {
+&:hover::after,
+&:focus::after {
   opacity: 1;
 }
 
-.nav-link:focus,
-.nav-link:hover {
+&:focus,
+&:hover {
   color: $accent-color;
 }
 
@@ -137,7 +136,7 @@ header {
   @include transit(color);
 }
 
-.add-link:focus,
-.add-link:hover {
+&:focus,
+&:hover {
   color: $accent-color;
 }

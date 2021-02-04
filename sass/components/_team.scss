@@ -31,8 +31,8 @@
   fill: currentColor;
 }
 
-.social-link:hover,
-.social-link:focus {
+&:hover,
+&:focus {
   color: $main-background-color;
   background-color: $accent-color;
 }

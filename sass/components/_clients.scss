@@ -13,8 +13,8 @@
   margin-right: 30px;
 }
 
-.clients-link:hover,
-.clients-link:focus {
+&:hover,
+&:focus {
   color: $accent-color;
   border-color: $accent-color;
 }
