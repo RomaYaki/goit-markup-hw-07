@@ -22,7 +22,6 @@
   </head>
   <body>
     <header>
-      
       <nav class="container-nav">
         <div class="logo-header">
           <a class="main-logo" href="./">
@@ -62,6 +61,20 @@
             </a>
           </li>
         </ul>
+
+        <button type="button" 
+        class="menu-button"
+        aria-expanded="false">
+          <svg class="header_menu-icon" 
+          width="40px" 
+          height="40px"
+          aria-label="переключатель меню мобильного">
+
+            <use class="icon-menu" href="./photo/icomoon/symbol-defs.svg#icon-menu"></use>
+            <use class="icon-cross" href="./photo/icomoon/symbol-defs.svg#icon-close-phone"></use>
+          </svg>
+        </button>
+
       </nav>
     </header>
 
@@ -447,6 +460,7 @@
       </section>
     </main>
 
+    
     <footer>
       <div class="footer-container">
         <!-- Addres -->
@@ -624,6 +638,8 @@
         </div>
       </div>
     </div>
+    
+    
 
     <script>
       const refs = {
@@ -645,5 +661,8 @@
         console.log("Это клик в бэкдроп");
       }
     </script>
+
+    <script src="./js/menu.js"></script>
+
   </body>
 </html>

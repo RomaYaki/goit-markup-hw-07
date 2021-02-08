@@ -2,11 +2,6 @@ header {
   border-bottom: 1px solid #eeeeee;
 }
 
-.logo-header {
-  padding-top: 24px;
-  padding-bottom: 15px;
-}
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -43,6 +38,10 @@ header {
   text-align: left;
 }
 
+.logo-header {
+  padding-top: 24px;
+  padding-bottom: 15px;
+}
 /* NAV */
 .head-nav-link {
   display: flex;
@@ -68,39 +67,38 @@ header {
   line-height: 16px;
   letter-spacing: 0.02em;
   @include transit(color);
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: $accent-color;
+    opacity: 0;
+
+    @include transit(opacity);
+  }
+
+  &::after,
+  &:hover::after {
+    opacity: 1;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
+
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
 }
-
-&::after {
-  content: "";
-
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 4px;
-  background-color: $accent-color;
-  opacity: 0;
-
-  @include transit(opacity);
-}
-
-&::after,
-&:hover::after {
-  opacity: 1;
-}
-
-&:hover::after,
-&:focus::after {
-  opacity: 1;
-}
-
-&:focus,
-&:hover {
-  color: $accent-color;
-}
-
 /* ADDRRES */
 
 .head-add {
@@ -136,9 +134,8 @@ header {
   font-weight: 500;
 
   @include transit(color);
-}
-
-&:focus,
-&:hover {
-  color: $accent-color;
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
 }

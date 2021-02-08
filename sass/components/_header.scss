@@ -1,150 +1,241 @@
-.container header {
+header {
   border-bottom: 1px solid #eeeeee;
-}
-
-.logo-header {
-  padding-top: 24px;
-  padding-bottom: 15px;
 }
 
 .container-nav {
   background-color: $main-background-color;
   align-items: center;
   display: flex;
+  width: 450px;
 
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  // logo
+  .logo-blue {
+    color: $accent-color;
+    font-family: $main-font-family;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1170px) {
+      color: $accent-color;
+      font-family: $main-font-family;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 31px;
+      letter-spacing: 0.03em;
+      text-align: left;
+    }
+  }
+  .logo {
+    color: $text-color;
+    font-family: $main-font-family;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1170px) {
+      color: $text-color;
+      font-family: $main-font-family;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 36px;
+      letter-spacing: 0.03em;
+      text-align: left;
+    }
+  }
+  .logo-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @media screen and (min-width: 1170px) {
+      padding-top: 24px;
+      padding-bottom: 15px;
+    }
+  }
+
+  // button
+  .menu-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: $text-color;
+    margin-left: auto;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  .header_menu-icon {
+    fill: currentColor;
+  }
+
+  .menu-button .icon-cross {
+    display: none;
+  }
+
+  .menu-button.is-open .icon-cross {
+    display: block;
+  }
+
+  .menu-button.is-open .icon-menu {
+    display: none;
+  }
+
+  // nav
+  .head-nav-link {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      margin-left: 88px;
+    }
+
+    @media screen and (min-width: 1170px) {
+      display: flex;
+      margin-left: 93px;
+    }
+  }
+  .nav-link {
+    position: relative;
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 10px;
+
+    color: $text-color;
+
+    font-family: $sec-font-family;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    @include transit(color);
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 4px;
+      border-radius: 4px;
+      background-color: $accent-color;
+      opacity: 0;
+
+      @include transit(opacity);
+    }
+
+    .current-link.nav-link::after,
+    .nav-link:hover::after {
+      opacity: 1;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      opacity: 1;
+    }
+
+    &:focus,
+    &:hover {
+      color: $accent-color;
+    }
+  }
+  .head-nav-link .nav-li + .nav-li {
+    margin-left: 50px;
+  }
+
+  // address
+  .head-add {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+      margin-left: auto;
+    }
+    @media screen and (min-width: 1170px) {
+      display: flex;
+      margin-left: auto;
+    }
+  }
+  .tel-icon {
+    margin-right: 8px;
+    fill: currentColor;
+    width: 10px;
+    height: 14px;
+    @media screen and (min-width: 1170px) {
+      margin-right: 10px;
+    }
+  }
+  .mail-icon {
+    margin-right: 8px;
+    fill: currentColor;
+    width: 14px;
+    height: 10px;
+    @media screen and (min-width: 1170px) {
+      margin-right: 10px;
+    }
+  }
+  .add-link {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    color: $sec-text-color;
+
+    font-family: $sec-font-family;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+
+    @include transit(color);
+    &:focus,
+    &:hover {
+      color: $accent-color;
+    }
+
+    @media screen and (min-width: 1170px) {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      color: $sec-text-color;
+
+      font-family: $sec-font-family;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+
+      @include transit(color);
+      &:focus,
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+  @media screen and (min-width: 1170px) {
+    .head-add .add-li + .add-li {
+      margin-left: 50px;
+    }
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    width: 738px;
   }
 
   @media screen and (min-width: 1170px) {
     width: 1170px;
-  }
-}
-
-.logo-blue {
-  color: $accent-color;
-  font-family: $main-font-family;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  text-align: left;
-}
-.logo {
-  color: $text-color;
-  font-family: $main-font-family;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 36px;
-  letter-spacing: 0.03em;
-  text-align: left;
-}
-
-.head-nav-link {
-  display: flex;
-  margin-left: 93px;
-}
-
-.head-nav-link .nav-li + .nav-li {
-  margin-left: 50px;
-}
-
-.nav-link {
-  position: relative;
-  display: block;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-top: 10px;
-
-  color: $text-color;
-
-  font-family: $sec-font-family;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  @include transit(color);
-
-  &::after {
-    content: "";
-
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 4px;
-    background-color: $accent-color;
-    opacity: 0;
-
-    @include transit(opacity);
-  }
-
-  &::after,
-  &:hover::after {
-    opacity: 1;
-  }
-
-  &:hover::after,
-  &:focus::after {
-    opacity: 1;
-  }
-
-  &:focus,
-  &:hover {
-    color: $accent-color;
-  }
-}
-/* ADDRRES */
-
-.head-add {
-  display: flex;
-  margin-left: auto;
-}
-
-.tel-icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-.mail-icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.head-add .add-li + .add-li {
-  margin-left: 50px;
-}
-
-.add-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  color: $sec-text-color;
-
-  font-family: $sec-font-family;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-
-  @include transit(color);
-
-  &:focus,
-  &:hover {
-    color: $accent-color;
   }
 }
