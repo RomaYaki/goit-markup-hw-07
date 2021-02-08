@@ -11,11 +11,12 @@
 }
 .clients-ul > .clients-li:not(:last-child) {
   margin-right: 30px;
-  &:hover,
-  &:focus {
-    color: $accent-color;
-    border-color: $accent-color;
-  }
+}
+
+&:hover,
+&:focus {
+  color: $accent-color;
+  border-color: $accent-color;
 }
 
 .clients-ul {

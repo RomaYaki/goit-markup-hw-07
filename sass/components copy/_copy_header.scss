@@ -1,4 +1,4 @@
-.container header {
+header {
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -7,28 +7,20 @@
   padding-bottom: 15px;
 }
 
-.container-nav {
-  background-color: $main-background-color;
-  align-items: center;
-  display: flex;
-
+.container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1170px) {
-    width: 1170px;
-  }
 }
+
+.container-nav {
+  background-color: $main-background-color;
+  align-items: center;
+  display: flex;
+  width: 1170px;
+}
+/* Logo */
 
 .logo-blue {
   color: $accent-color;
@@ -51,6 +43,7 @@
   text-align: left;
 }
 
+/* NAV */
 .head-nav-link {
   display: flex;
   margin-left: 93px;
@@ -75,38 +68,39 @@
   line-height: 16px;
   letter-spacing: 0.02em;
   @include transit(color);
-
-  &::after {
-    content: "";
-
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 4px;
-    background-color: $accent-color;
-    opacity: 0;
-
-    @include transit(opacity);
-  }
-
-  &::after,
-  &:hover::after {
-    opacity: 1;
-  }
-
-  &:hover::after,
-  &:focus::after {
-    opacity: 1;
-  }
-
-  &:focus,
-  &:hover {
-    color: $accent-color;
-  }
 }
+
+&::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: $accent-color;
+  opacity: 0;
+
+  @include transit(opacity);
+}
+
+&::after,
+&:hover::after {
+  opacity: 1;
+}
+
+&:hover::after,
+&:focus::after {
+  opacity: 1;
+}
+
+&:focus,
+&:hover {
+  color: $accent-color;
+}
+
 /* ADDRRES */
 
 .head-add {
@@ -142,9 +136,9 @@
   font-weight: 500;
 
   @include transit(color);
+}
 
-  &:focus,
-  &:hover {
-    color: $accent-color;
-  }
+&:focus,
+&:hover {
+  color: $accent-color;
 }
