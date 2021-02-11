@@ -1,12 +1,18 @@
 .wwd-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-top: 94px;
+  margin-top: 94px;
+  display: none;
+  @media screen and( min-width: 1170px) {
+    width: 1170px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .wwd-container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 1170px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -21,7 +27,6 @@
   letter-spacing: 0.03em;
   text-align: center;
 }
-
 .wwd-img-ul {
   display: flex;
   padding-left: 0px;
@@ -53,8 +58,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-  color: #ffffff;
+  color: $text-hero;
 }
 
 .wwd-img-li:last-child {

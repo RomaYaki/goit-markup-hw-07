@@ -62,19 +62,24 @@
           </li>
         </ul>
 
-        <button type="button" 
-        class="menu-button"
-        aria-expanded="false">
-          <svg class="header_menu-icon" 
-          width="40px" 
-          height="40px"
-          aria-label="переключатель меню мобильного">
+        
+          <button type="button" 
+          class="menu-button"
+          aria-expanded="false">
+              <svg class="header_menu-icon" 
+                width="40px" 
+                height="40px"
+                aria-label="переключатель меню мобильного">
 
-            <use class="icon-menu" href="./photo/icomoon/symbol-defs.svg#icon-menu"></use>
-            <use class="icon-cross" href="./photo/icomoon/symbol-defs.svg#icon-close-phone"></use>
-          </svg>
-        </button>
+                  <use class="icon-menu" href="./photo/icomoon/symbol-defs.svg#icon-menu"></use>
+                  <use class="icon-cross" href="./photo/icomoon/symbol-defs.svg#icon-close-phone"></use>
+              </svg>
+          </button>
 
+        <div class="menu-container" data-menu>
+          MENU
+        </div>
+      
       </nav>
     </header>
 
@@ -91,64 +96,72 @@
         </div>
       </section>
 
-      <!-- best -->
-      <section class="best-section">
+      <!-- ADVANTAGE -->
+      <section class="advantage-section">
 
-        <div class="best-container container">
+        <div class="advantage_container">
           <ul class="main-best-ul">
             <li class="main-best-li">
-              <div class="back-best">
+              <div class="advantage_card">
                 <svg width="70px" height="70px">
                   <use
                     href="./photo/icomoon/symbol-defs.svg#icon-antenna"
                   ></use>
                 </svg>
               </div>
-              <h3 class="best">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-              <p class="best-text">
+              <div class="avantage_text-section">
+              <h3 class="advantage_title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+              <p class="advantage_text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
+              </div>
             </li>
             <li class="main-best-li">
-              <div class="back-best">
+              <div class="advantage_card">
                 <svg width="70px" height="70px">
                   <use href="./photo/icomoon/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="best">ПУНКТУАЛЬНОСТЬ</h3>
-              <p class="best-text">
+              <div class="avantage_text-section">
+              <h3 class="advantage_title">ПУНКТУАЛЬНОСТЬ</h3>
+              <p class="advantage_text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
+              </div>
             </li>
             <li class="main-best-li">
-              <div class="back-best">
+              <div class="advantage_card">
                 <svg width="70px" height="70px">
                   <use
                     href="./photo/icomoon/symbol-defs.svg#icon-diagram"
                   ></use>
                 </svg>
               </div>
-              <h3 class="best">ПЛАНИРОВАНИЕ</h3>
-              <p class="best-text">
+              <div class="avantage_text-section">
+              <h3 class="advantage_title">ПЛАНИРОВАНИЕ</h3>
+              <p class="advantage_text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
+              </div>
             </li>
             <li class="main-best-li">
-              <div class="back-best">
+              <div class="advantage_card">
                 <svg width="70px" height="70px">
                   <use
                     href="./photo/icomoon/symbol-defs.svg#icon-astronaut"
                   ></use>
                 </svg>
               </div>
-              <h3 class="best">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-              <p class="best-text">
+              <div class="avantage_text-section">
+              <h3 class="advantage_title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+              <p class="advantage_text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -210,11 +223,9 @@
 
           <ul class="team-ul">
             <li class="team-li">
-              <img
+              <img class="team_img"
                 src="./photo/IhorD.jpg"
                 alt="Игорь Демьяненко"
-                width="270"
-                height="260"
               />
               <h4 class="name">Игорь Демьяненко</h4>
               <p class="profession">Product Designer</p>
@@ -259,11 +270,9 @@
             </li>
 
             <li class="team-li">
-              <img
+              <img class="team_img"
                 src="./photo/OlhaR.jpg"
                 alt="Ольга Репина"
-                width="270"
-                height="260"
               />
               <h4 class="name">Ольга Репина</h4>
               <p class="profession">Frontend Developer</p>
@@ -307,11 +316,9 @@
               </ul>
             </li>
             <li class="team-li">
-              <img
+              <img class="team_img"
                 src="./photo/NikolaiT.jpg"
                 alt="Николай Тарасов"
-                width="270"
-                height="260"
               />
               <h4 class="name">Николай Тарасов</h4>
               <p class="profession">Marketing</p>
@@ -355,11 +362,9 @@
               </ul>
             </li>
             <li class="team-li">
-              <img
+              <img class="team_img"
                 src="./photo/MikhailT.jpg"
                 alt="Михаил Ермаков"
-                width="270"
-                height="260"
               />
               <h4 class="name">Михаил Ермаков</h4>
               <p class="profession">UI Designer</p>

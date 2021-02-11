@@ -7,7 +7,7 @@
     // записываем его в  переменную menuBtnRef
     const menuBtnRef = document.querySelector(".menu-button");
 
-    // const mobileMenuRef = document.querySelector("[data-menu]");
+    const mobileMenuRef = document.querySelector("[data-menu]");
     // не работает  потомучто нетможет  найти  в  штмл [data-menu-button]
 
     // menuBtnRef когда у элемента  сработает  событие  click вызвать  функцию которую мы  указали 2м аргуументом
@@ -20,7 +20,7 @@
             // menuBtnRef.setAttribute("aria-expanded", !expanded);
 
         // обращаемся к елементу и добавляем  если есть  и  убираем если  нет клас is-open 
-            menuBtnRef.classList.toggle("is-open");
+            mobileMenuRef.classList.toggle("is-open");
         });
 })();
 

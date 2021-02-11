@@ -13,12 +13,6 @@
   margin-right: 30px;
 }
 
-&:hover,
-&:focus {
-  color: $accent-color;
-  border-color: $accent-color;
-}
-
 .clients-ul {
   justify-content: center;
   padding-top: 50px;
@@ -37,6 +31,11 @@
   color: $social-icons;
 
   @include transit(color);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
 }
 
 .clients-icon {
