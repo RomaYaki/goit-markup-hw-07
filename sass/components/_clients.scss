@@ -1,6 +1,11 @@
 .clients-section {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1170px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .clients-container {
   width: 480px;
@@ -12,6 +17,14 @@
   @media screen and (min-width: 768px) {
     width: 768px;
   }
+
+  @media screen and (min-width: 1170px) {
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .clients-ul {
@@ -20,44 +33,33 @@
   padding-top: 50px;
   padding-left: 0px;
   flex-wrap: wrap;
+
+  @media screen and (min-width: 1170px) {
+    width: 1170px;
+    flex-wrap: nowrap;
+  }
 }
 
 .clients-li {
-  @media screen and (min-width: 400px) and (max-width: 767px) {
+  @media screen and (min-width: 375px) and (max-width: 767px) {
     margin-right: 30px;
     margin-bottom: 30px;
     &:nth-child(2n) {
       margin-right: 0px;
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1169px) {
     margin-right: 30px;
     margin-bottom: 30px;
     &:nth-child(3n) {
       margin-right: 0px;
     }
   }
+
+  @media screen and (min-width: 1170px) {
+    margin: 15px;
+  }
 }
-
-// @media screen and (min-width: 480px) and (max-width: 767px) {
-//   .clients-li {
-//     margin-right: 30px;
-//     margin-bottom: 30px;
-//     &:nth-child(2n) {
-//       margin-right: 0px;
-//     }
-//   }
-// }
-
-// @media screen and (min-width: 768px) {
-//   .clients-li {
-//     margin-right: 30px;
-//     margin-bottom: 30px;
-//     &:nth-child(3n) {
-//       margin-right: 0px;
-//     }
-//   }
-// }
 
 .clients-link {
   display: inline-flex;
@@ -75,6 +77,9 @@
   &:focus {
     color: $accent-color;
     border-color: $accent-color;
+  }
+  @media screen and (min-width: 1170px) {
+    width: 170px;
   }
 }
 
