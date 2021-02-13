@@ -9,16 +9,59 @@
   padding-bottom: 60px;
 
   @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1170px) {
+    width: 1170px;
+    align-items: baseline;
+    justify-content: space-between;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  footer {
+    max-width: 1600px;
+    background-color: $dark-background-color;
+  }
+
+  .footer-social {
+    margin-left: 70px;
   }
 }
 
 .footer_tablet-container {
-  display: flex;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: inline-block;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1170px) {
+    align-items: baseline;
+    justify-content: space-between;
+    display: flex;
+  }
 }
 
 .footer-logo {
   display: flex;
   justify-content: center;
+
+  @media screen and (min-width: 1170px) {
+    justify-content: start;
+  }
+}
+
+.footer_social-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .logo-foot {
@@ -50,26 +93,16 @@
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.03em;
-  text-align: left;
 }
 
 .footer-ul {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 60px;
-}
 
-.follow-text {
-  text-align: center;
-  margin: 0;
-  font-family: $sec-font-family;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  text-transform: uppercase;
+  @media screen and (min-width: 1170px) {
+    text-align: left;
+  }
 }
 
 .footer_social-container {
@@ -112,6 +145,35 @@
 .send-container {
   width: 450px;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1170px) {
+    margin-left: 93px;
+    margin-right: 0;
+    text-align: left;
+    width: auto;
+  }
+}
+
+.follow-text {
+  text-align: center;
+  margin: 0;
+  font-family: $sec-font-family;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1170px) {
+    text-align: left;
+  }
 }
 
 .send-container .follow-text {
@@ -121,6 +183,11 @@
 .footer-form {
   margin-right: auto;
   margin-left: auto;
+
+  @media screen and (min-width: 1170px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .footer-follow {
@@ -133,6 +200,10 @@
   border-radius: 4px;
   background: rgba(33, 150, 243, 0);
   padding-left: 16px;
+
+  @media screen and (min-width: 1170px) {
+    width: 358px;
+  }
 }
 
 .follow-button {
@@ -160,6 +231,11 @@
   text-align: center;
   text-decoration: none;
   line-height: 26px;
+
+  @media screen and (min-width: 1170px) {
+    margin-left: 12px;
+    margin-top: 0;
+  }
 }
 
 .sand-icon {

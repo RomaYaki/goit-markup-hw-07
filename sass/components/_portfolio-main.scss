@@ -1,6 +1,57 @@
+.photo-ul {
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1170px) {
+    width: 1170px;
+  }
+}
+
+.photo-element {
+  width: 450px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) and (max-width: 1169px) {
+    width: 354px;
+    height: 440px;
+    margin-right: 30px;
+    box-sizing: border-box;
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
+  }
+
+  @media screen and (min-width: 1170px) {
+    width: 370px;
+    height: 404px;
+    margin-right: 30px;
+    &:nth-child(3n) {
+      margin-right: 0px;
+    }
+  }
+}
+
 .photo-portfolio {
   position: relative;
   overflow: hidden;
+}
+
+.portfolio_photo-file {
+  width: 450px;
+  height: 294px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 294px;
+  }
+  @media screen and (min-width: 1170px) {
+    width: 370px;
+    height: 294px;
+  }
 }
 
 .portfolio-overlay {
@@ -10,65 +61,38 @@
   width: 100%;
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
-
-  transform: translateY(100%);
   @include transit(transform);
-
-  &:hover .portfolio-overlay {
-    transform: translateY(0);
-  }
-
-  &:focus .portfolio-overlay {
-    transform: translateY(0);
-  }
-}
-
-.ppt {
-  padding-left: 24px;
-  padding-top: 63px;
-  font-family: $sec-font-family;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 28px;
-  /* or 156% */
-  letter-spacing: 0.03em;
-
-  color: #ffffff;
-}
-
-.photo-ul {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 0px;
-}
-
-.photo-element {
-  margin-right: 30px;
-  margin-bottom: 30px;
-  /* border: 1px solid #eeeeee; */
-  box-sizing: border-box;
+  transform: translateY(100%);
 }
 
 .pic-link {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+
   display: block;
 
+  &:hover .portfolio-overlay {
+    transform: translateY(0);
+  }
+  &:focus .portfolio-overlay {
+    transform: translateY(0);
+  }
   &:focus,
   &:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
       0px 4px 4px rgba(0, 0, 0, 0.25);
     cursor: pointer;
   }
-}
 
-.Portfolio-text {
-  padding: 20px 24px;
-}
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 440px;
+  }
 
-.photo-element:nth-child(3n) {
-  margin-right: 0px;
+  @media screen and (min-width: 1170px) {
+    width: 370px;
+    height: 404px;
+  }
 }
 
 .name-project {
@@ -94,4 +118,23 @@
   text-align: left;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+.Portfolio-text {
+  margin-top: 20px;
+  margin-left: 24px;
+}
+
+.ppt {
+  padding-left: 24px;
+  padding-top: 63px;
+  font-family: $sec-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
 }

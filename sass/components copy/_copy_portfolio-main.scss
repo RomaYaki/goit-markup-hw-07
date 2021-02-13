@@ -13,16 +13,14 @@
 
   transform: translateY(100%);
   @include transit(transform);
-}
 
-&:hover .portfolio-overlay {
-  transform: translateY(0);
+  &:hover .portfolio-overlay {
+    transform: translateY(0);
+  }
+  &:focus .portfolio-overlay {
+    transform: translateY(0);
+  }
 }
-
-&:focus .portfolio-overlay {
-  transform: translateY(0);
-}
-
 .ppt {
   padding-left: 24px;
   padding-top: 63px;
@@ -48,19 +46,21 @@
   margin-bottom: 30px;
   /* border: 1px solid #eeeeee; */
   box-sizing: border-box;
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
 }
 
 .pic-link {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   display: block;
-}
-
-&:focus,
-&:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
-    0px 4px 4px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
+  &:focus,
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+      0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
 }
 
 .Portfolio-text {

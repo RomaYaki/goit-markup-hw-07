@@ -1,31 +1,55 @@
 .portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
 }
 
 .portfolio-container {
-  width: 1230px;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1170px) {
+    width: 1206px;
+  }
 }
 
 .portfolio-buttons-section {
-  padding-bottom: 50px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
 }
 
 .portfolio-buttons-ul {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   padding-left: 0px;
-}
-.portfolio-buttons-li {
-  padding-right: 8px;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
-.portfolio-buttons-li:last-child {
-  padding-right: 0px;
+.portfolio-buttons-li {
+  margin-bottom: 15px;
+  padding-right: 8px;
+  &:last-child {
+    padding-right: 0px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio-button {

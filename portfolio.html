@@ -18,14 +18,15 @@
 <body>
 <header>
     <nav class="container-nav">
-
         <div class="logo-header">
-            <a class="main-logo" href="./"><span class="logo-blue">Web</span><span class="logo">Studio</span></a>
+            <a class="main-logo" href="./">
+                <span class="logo-blue">Web</span><span class="logo">Studio</span>
+            </a>
         </div>
 
         <ul class="head-nav-link">
             <li class="nav-li">
-                <a class="nav-link" href="./index.html">Студия</a>
+                <a class="nav-link current-link" href="./index.html">Студия</a>
             </li>
             <li class="nav-li">
                 <a class="nav-link" href="./portfolio.html">Портфолио</a>
@@ -52,8 +53,21 @@
                     +38 096 111 11 11
                 </a>
             </li>
-
         </ul>
+
+
+        <button type="button" class="menu-button" aria-expanded="false">
+            <svg class="header_menu-icon" width="40px" height="40px" aria-label="переключатель меню мобильного">
+
+                <use class="icon-menu" href="./photo/icomoon/symbol-defs.svg#icon-menu"></use>
+                <use class="icon-cross" href="./photo/icomoon/symbol-defs.svg#icon-close-phone"></use>
+            </svg>
+        </button>
+
+        <div class="menu-container" data-menu>
+            MENU
+        </div>
+
     </nav>
 </header>
 
@@ -77,7 +91,7 @@
                     <li class="photo-element">
                             <a class="pic-link" href="#">
                                 <div class="photo-portfolio">
-                                    <img src="./photoPortfolio/img.jpg" alt="фото сайта" width="370" height="294">
+                                    <img class="portfolio_photo-file" src="./photoPortfolio/img.jpg" alt="фото сайта">
                                     <div class="portfolio-overlay">
                                         <p class="ppt">
                                             Технокряк это современная площадка распространения коронавируса.
@@ -97,7 +111,7 @@
                     <li class="photo-element">
                             <a class="pic-link" href="#">
                                 <div class="photo-portfolio">
-                                    <img src="./photoPortfolio/img-2.jpg" alt="постер дизайн" width="370" height="294">
+                                    <img class="portfolio_photo-file" src="./photoPortfolio/img-2.jpg" alt="постер дизайн">
                                     <div class="portfolio-overlay">
                                     
                                     </div>
@@ -113,7 +127,7 @@
                     <li class="photo-element">
                             <a class="pic-link" href="#">
                                 <div class="photo-portfolio">
-                                    <img src="./photoPortfolio/img-3.jpg" alt="Приложения ресторана" width="370" height="294">
+                                    <img class="portfolio_photo-file" src="./photoPortfolio/img-3.jpg" alt="Приложения ресторана" >
                                     <div class="portfolio-overlay">
                                     </div>
                                  </div>    
@@ -128,7 +142,7 @@
                     <li class="photo-element">
                             <a class="pic-link" href="#">
                                 <div class="photo-portfolio">
-                                    <img src="./photoPortfolio/img-4.jpg" alt="фото наушников" width="370" height="294">
+                                    <img class="portfolio_photo-file" src="./photoPortfolio/img-4.jpg" alt="фото наушников" >
                                     <div class="portfolio-overlay">
                                     
                                     </div>
@@ -143,7 +157,7 @@
                     <li class="photo-element">
                             <a class="pic-link" href="#">
                                 <div class="photo-portfolio">
-                                    <img src="./photoPortfolio/img-5.jpg" alt="коробки" width="370" height="294">
+                                    <img class="portfolio_photo-file" src="./photoPortfolio/img-5.jpg" alt="коробки" >
                                     <div class="portfolio-overlay">
                                     
                                     </div>
@@ -158,7 +172,7 @@
                     <li class="photo-element">
                             <a class="pic-link" href="#">
                                 <div class="photo-portfolio">
-                                    <img src="./photoPortfolio/img-6.jpg" alt="Фото Веб-сайт" width="370" height="294">
+                                    <img class="portfolio_photo-file" src="./photoPortfolio/img-6.jpg" alt="Фото Веб-сайт" >
                                     <div class="portfolio-overlay">
                                     
                                     </div>
@@ -173,7 +187,7 @@
                     <li class="photo-element">
                             <a class="pic-link" href="#">
                                 <div class="photo-portfolio">
-                                    <img src="./photoPortfolio/img-7.jpg" alt="книга" width="370" height="294">
+                                    <img class="portfolio_photo-file" src="./photoPortfolio/img-7.jpg" alt="книга" >
                                     <div class="portfolio-overlay">
                                     
                                     </div>
@@ -188,7 +202,7 @@
                     <li class="photo-element">
                             <a class="pic-link" href="#">
                                 <div class="photo-portfolio">
-                                    <img src="./photoPortfolio/img-8.jpg" alt="бирка" width="370" height="294">
+                                    <img class="portfolio_photo-file" src="./photoPortfolio/img-8.jpg" alt="бирка" >
                                     <div class="portfolio-overlay">
                                     
                                     </div>
@@ -203,7 +217,7 @@
                     <li class="photo-element">
                             <a class="pic-link" href="#">
                                 <div class="photo-portfolio">
-                                    <img src="./photoPortfolio/img-9.jpg" alt="ноутбук" width="370" height="294">
+                                    <img class="portfolio_photo-file" src="./photoPortfolio/img-9.jpg" alt="ноутбук" >
                                     <div class="portfolio-overlay">
                                     
                                     </div>
@@ -222,66 +236,67 @@
 <footer>
     <div class="footer-container">
         <!-- Addres -->
-        <div class="footer-addres">
-            <div class="footer-logo">
-                <a href="./"><span class="logo-foot">Web</span><span class="logo-white">Studio</span></a>
-            </div>
+        <div class="footer_tablet-container">
+            <div class="footer_address-logo">
+                <div class="footer-logo">
+                    <a href="./"><span class="logo-foot">Web</span><span class="logo-white">Studio</span></a>
+                </div>
 
-            <div class="footer-adres">
-                <ul class="footer-ul">
-                    <li>
-                        <a class="addres"
-                            href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=uk">
-
-                            м. Київ, пр-т Лесі Українки. 26
-                        </a>
-                    </li>
-                    <li>
-                        <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    </li>
-                    <li>
-                        <a class="number" href="tel:+380961111111">+38 096 111 11 11</a>
-                    </li>
-                </ul>
+                <div class=".footer_addres-container">
+                    <ul class="footer-ul">
+                        <li>
+                            <a class="footer_addres"
+                                href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=uk">
+                                м. Київ, пр-т Лесі Українки. 26
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer_addres" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li>
+                            <a class="footer_addres" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <!-- Social -->
-        <div class="footer-social">
-            <div class="foot-txt">
-                <h3 class="follow-text">ПРИСОЕДИНЯЙТЕСЬ</h3>
-            </div>
+            <!-- Social -->
+            <div class="footer-social">
+                <div class="foot-txt">
+                    <h3 class="follow-text">ПРИСОЕДИНЯЙТЕСЬ</h3>
+                </div>
 
-            <div>
-                <ul class="social-block-footer">
-                    <li class="social-li">
-                        <a class="social-link-footer" href="">
-                            <svg class="social-icon">
-                                <use href="./photo/icomoon/symbol-defs.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-li">
-                        <a class="social-link-footer" href="">
-                            <svg class="social-icon">
-                                <use href="./photo/icomoon/symbol-defs.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-li">
-                        <a class="social-link-footer" href="">
-                            <svg class="social-icon">
-                                <use href="./photo/icomoon/symbol-defs.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-li">
-                        <a class="social-link-footer" href="">
-                            <svg class="social-icon">
-                                <use href="./photo/icomoon/symbol-defs.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                <div class="footer_social-container">
+                    <ul class="social-block-footer">
+                        <li class="social-li">
+                            <a class="social-link-footer" href="">
+                                <svg class="social-icon">
+                                    <use href="./photo/icomoon/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-li">
+                            <a class="social-link-footer" href="">
+                                <svg class="social-icon">
+                                    <use href="./photo/icomoon/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-li">
+                            <a class="social-link-footer" href="">
+                                <svg class="social-icon">
+                                    <use href="./photo/icomoon/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-li">
+                            <a class="social-link-footer" href="">
+                                <svg class="social-icon">
+                                    <use href="./photo/icomoon/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!-- Follow modal -->
@@ -289,9 +304,9 @@
             <p class="follow-text">Подпишитесь на рассылку</p>
             <form autocomplete="off" class="footer-form">
                 <label>
-                    <input type="email" placeholder="E-mail" class="footer-follow">
-
+                    <input type="email" placeholder="E-mail" class="footer-follow" />
                 </label>
+
                 <button class="follow-button">
                     Подписаться
                     <svg class="sand-icon">
