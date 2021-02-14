@@ -1,12 +1,24 @@
+footer {
+  width: 480px;
+  background-color: $dark-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1170px) {
+    width: 1600px;
+  }
+}
+
 .footer-container {
   margin-left: auto;
   margin-right: auto;
   width: 480px;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: $dark-background-color;
-  padding-top: 60px;
-  padding-bottom: 60px;
 
   @media screen and (min-width: 768px) {
     width: 768px;
@@ -33,7 +45,7 @@
 
 .footer_tablet-container {
   @media screen and (min-width: 480px) and (max-width: 767px) {
-    display: inline-block;
+    display: block;
   }
 
   @media screen and (min-width: 768px) {

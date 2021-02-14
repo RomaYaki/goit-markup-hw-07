@@ -3,8 +3,8 @@
   padding-bottom: 60px;
 
   @media screen and (min-width: 1170px) {
-    padding-top: 94px;
     padding-bottom: 94px;
+    padding-top: 94px;
   }
 }
 .clients-container {
@@ -36,7 +36,8 @@
 
   @media screen and (min-width: 1170px) {
     width: 1170px;
-    flex-wrap: nowrap;
+
+    justify-content: space-between;
   }
 }
 
@@ -54,10 +55,6 @@
     &:nth-child(3n) {
       margin-right: 0px;
     }
-  }
-
-  @media screen and (min-width: 1170px) {
-    margin: 15px;
   }
 }
 
