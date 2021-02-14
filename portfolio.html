@@ -24,49 +24,63 @@
             </a>
         </div>
 
-        <ul class="head-nav-link">
-            <li class="nav-li">
-                <a class="nav-link current-link" href="./index.html">Студия</a>
-            </li>
-            <li class="nav-li">
-                <a class="nav-link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="nav-li">
-                <a class="nav-link" href="/">Контакты</a>
-            </li>
-        </ul>
-
-        <ul class="head-add">
-            <li class="add-li">
-                <a class="add-link" href="mailto:info@devstudio.com">
-                    <svg class="mail-icon" width="16px" height="12px">
-                        <use href="./photo/icomoon/symbol-defs.svg#icon-envelope"></use>
-                    </svg>
-                    info@devstudio.com
-                </a>
-            </li>
-            <li class="add-li">
-                <a class="add-link" href="tel:+380961111111">
-                    <svg class="tel-icon" width="10px" height="16px">
-                        <use href="./photo/icomoon/symbol-defs.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11
-                </a>
-            </li>
-        </ul>
+        <div class="menu-container" data-menu>
+            <ul class="head-nav-link">
+                <li class="nav-li">
+                    <a class="nav-link current-link" href="./index.html">Студия</a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-link" href="/">Контакты</a>
+                </li>
+            </ul>
 
 
-        <button type="button" class="menu-button" aria-expanded="false">
+            <ul class="head-add">
+                <li class="add-li">
+                    <a class="add-link header_mail" href="mailto:info@devstudio.com">
+                        <svg class="mail-icon" width="16px" height="12px">
+                            <use href="./photo/icomoon/symbol-defs.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="add-li">
+                    <a class="header_tel" href="tel:+380961111111">
+                        <svg class="tel-icon" width="10px" height="16px">
+                            <use href="./photo/icomoon/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="header_menu-link">
+                <li>
+                    <a class="header_links" href="#">Instagram</a>
+                </li>
+                <li>
+                    <a class="header_links" href="#">Twitter</a>
+                </li>
+                <li>
+                    <a class="header_links" href="#">Facebook</a>
+                </li>
+                <li>
+                    <a class="header_links-lost" href="#">LinkedIn</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <button type="button" class="menu-button" data-menu-button aria-expanded="false">
             <svg class="header_menu-icon" width="40px" height="40px" aria-label="переключатель меню мобильного">
 
                 <use class="icon-menu" href="./photo/icomoon/symbol-defs.svg#icon-menu"></use>
                 <use class="icon-cross" href="./photo/icomoon/symbol-defs.svg#icon-close-phone"></use>
             </svg>
         </button>
-
-        <div class="menu-container" data-menu>
-            MENU
-        </div>
 
     </nav>
 </header>
